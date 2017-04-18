@@ -101,6 +101,5 @@ C:\DEV\CaWe\CaWe\bin\System.Web.WebPages.Deployment.xml
 C:\DEV\CaWe\CaWe\bin\System.Web.WebPages.Razor.xml
 C:\DEV\CaWe\CaWe\bin\Antlr3.Runtime.pdb
 C:\DEV\CaWe\CaWe\bin\Newtonsoft.Json.xml
-C:\DEV\CaWe\CaWe\obj\Debug\CaWe.UI.csprojResolveAssemblyReference.cache
 C:\DEV\CaWe\CaWe\obj\Debug\CaWe.dll
 C:\DEV\CaWe\CaWe\obj\Debug\CaWe.pdb

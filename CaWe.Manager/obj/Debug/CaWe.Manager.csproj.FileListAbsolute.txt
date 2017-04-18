@@ -1,0 +1,4 @@
+C:\DEV\CaWe\CaWe.Manager\bin\Debug\CaWe.Manager.dll
+C:\DEV\CaWe\CaWe.Manager\bin\Debug\CaWe.Manager.pdb
+C:\DEV\CaWe\CaWe.Manager\obj\Debug\CaWe.Manager.dll
+C:\DEV\CaWe\CaWe.Manager\obj\Debug\CaWe.Manager.pdb
