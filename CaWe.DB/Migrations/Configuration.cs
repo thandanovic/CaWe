@@ -26,6 +26,18 @@ namespace CaWe.DB.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            context.Users.AddOrUpdate(
+                new Entities.User() { Email = "admin@gmail.com", UserId = "123456789", Pass = "AD4itDLaHs0OgLhVrDZGNA7RDCG8QrX0R+GXvIVL3UtB6ueF9w2nD/05QKiK1S9Ctg==" }
+                );
+
+            context.Roles.AddOrUpdate(
+                 new Entities.Role() { RoleId = "1", Name = "admin", Description = "zestoki momak" }
+                );
+
+            context.UserRoles.AddOrUpdate(
+                new Entities.UserRole() { UserId = "123456789", RoleId = "1", UserRoleId = "1111" });
+
         }
     }
 }

@@ -10,3 +10,15 @@ C:\DEV\CaWe\CaWe.DB\bin\Debug\EntityFramework.SqlServer.xml
 C:\DEV\CaWe\CaWe.DB\obj\Debug\CaWe.DB.csprojResolveAssemblyReference.cache
 C:\DEV\CaWe\CaWe.DB\obj\Debug\CaWe.DB.dll
 C:\DEV\CaWe\CaWe.DB\obj\Debug\CaWe.DB.pdb
+C:\Development\Private\CaWe\CaWe.DB\bin\Debug\CaWe.DB.dll.config
+C:\Development\Private\CaWe\CaWe.DB\bin\Debug\CaWe.DB.dll
+C:\Development\Private\CaWe\CaWe.DB\bin\Debug\CaWe.DB.pdb
+C:\Development\Private\CaWe\CaWe.DB\bin\Debug\CaWe.Entities.dll
+C:\Development\Private\CaWe\CaWe.DB\bin\Debug\EntityFramework.dll
+C:\Development\Private\CaWe\CaWe.DB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Development\Private\CaWe\CaWe.DB\bin\Debug\CaWe.Entities.pdb
+C:\Development\Private\CaWe\CaWe.DB\bin\Debug\EntityFramework.xml
+C:\Development\Private\CaWe\CaWe.DB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Development\Private\CaWe\CaWe.DB\obj\Debug\CaWe.DB.csprojResolveAssemblyReference.cache
+C:\Development\Private\CaWe\CaWe.DB\obj\Debug\CaWe.DB.dll
+C:\Development\Private\CaWe\CaWe.DB\obj\Debug\CaWe.DB.pdb

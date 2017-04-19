@@ -1,0 +1,29 @@
+﻿@model CaWe.Models.LoginViewModel
+
+
+@using (Html.BeginForm("Login", "Account"))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Email)
+        @Html.ValidationMessageFor(model => model.Email)
+        @Html.EditorFor(model => model.Email)
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(model => model.Password)
+        @Html.ValidationMessageFor(model => model.Password)
+        @Html.PasswordFor(model => model.Password)
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(model => model.RememberMe)
+        @Html.ValidationMessageFor(model => model.RememberMe)
+        @Html.CheckBoxFor(model => model.RememberMe)
+    </div>
+
+    <input type="submit" value="Login" />
+}
+
+

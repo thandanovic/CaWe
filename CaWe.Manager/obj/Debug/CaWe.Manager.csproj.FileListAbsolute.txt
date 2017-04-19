@@ -2,3 +2,14 @@ C:\DEV\CaWe\CaWe.Manager\bin\Debug\CaWe.Manager.dll
 C:\DEV\CaWe\CaWe.Manager\bin\Debug\CaWe.Manager.pdb
 C:\DEV\CaWe\CaWe.Manager\obj\Debug\CaWe.Manager.dll
 C:\DEV\CaWe\CaWe.Manager\obj\Debug\CaWe.Manager.pdb
+C:\Development\Private\CaWe\CaWe.Manager\bin\Debug\CaWe.Manager.dll
+C:\Development\Private\CaWe\CaWe.Manager\bin\Debug\CaWe.Manager.pdb
+C:\Development\Private\CaWe\CaWe.Manager\bin\Debug\CaWe.DB.dll
+C:\Development\Private\CaWe\CaWe.Manager\bin\Debug\CaWe.Entities.dll
+C:\Development\Private\CaWe\CaWe.Manager\bin\Debug\EntityFramework.dll
+C:\Development\Private\CaWe\CaWe.Manager\bin\Debug\CaWe.DB.pdb
+C:\Development\Private\CaWe\CaWe.Manager\bin\Debug\CaWe.Entities.pdb
+C:\Development\Private\CaWe\CaWe.Manager\bin\Debug\EntityFramework.xml
+C:\Development\Private\CaWe\CaWe.Manager\obj\Debug\CaWe.Manager.csprojResolveAssemblyReference.cache
+C:\Development\Private\CaWe\CaWe.Manager\obj\Debug\CaWe.Manager.dll
+C:\Development\Private\CaWe\CaWe.Manager\obj\Debug\CaWe.Manager.pdb

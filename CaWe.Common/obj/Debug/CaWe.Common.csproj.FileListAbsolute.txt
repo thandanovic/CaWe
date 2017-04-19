@@ -2,3 +2,8 @@ C:\DEV\CaWe\CaWe.Common\bin\Debug\CaWe.Common.dll
 C:\DEV\CaWe\CaWe.Common\bin\Debug\CaWe.Common.pdb
 C:\DEV\CaWe\CaWe.Common\obj\Debug\CaWe.Common.dll
 C:\DEV\CaWe\CaWe.Common\obj\Debug\CaWe.Common.pdb
+C:\Development\Private\CaWe\CaWe.Common\bin\Debug\CaWe.Common.dll
+C:\Development\Private\CaWe\CaWe.Common\bin\Debug\CaWe.Common.pdb
+C:\Development\Private\CaWe\CaWe.Common\obj\Debug\CaWe.Common.csprojResolveAssemblyReference.cache
+C:\Development\Private\CaWe\CaWe.Common\obj\Debug\CaWe.Common.dll
+C:\Development\Private\CaWe\CaWe.Common\obj\Debug\CaWe.Common.pdb

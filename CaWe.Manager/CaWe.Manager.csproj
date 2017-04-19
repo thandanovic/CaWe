@@ -42,9 +42,20 @@
   <ItemGroup>
     <Compile Include="BaseManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CaWe.DB\CaWe.DB.csproj">
+      <Project>{143BD9EE-7CB3-480C-A191-1AD9996500A6}</Project>
+      <Name>CaWe.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CaWe.Entities\CaWe.Entities.csproj">
+      <Project>{40B688CD-C0DF-45F9-9633-DCEB5C4891D9}</Project>
+      <Name>CaWe.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
