@@ -10,5 +10,6 @@ namespace CaWe.Manager
 {
     public class UserManager : BaseManager<User>
     {
+
     }
 }
