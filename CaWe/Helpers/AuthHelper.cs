@@ -20,6 +20,13 @@ namespace CaWe.Helpers
             get { return passwordHasher ?? (passwordHasher = new PasswordHasher()); }
         }
 
+        private UserRoleManager userRoleManager;
+
+        private UserRoleManager UserRoleManager
+        {
+            get { return userRoleManager ?? (userRoleManager = new UserRoleManager()); }
+        }
+
         private UserManager userManager;
 
         private UserManager UserManager
@@ -34,6 +41,7 @@ namespace CaWe.Helpers
 
         public bool SignIn(LoginViewModel userModel)
         {
+            // Get user
             User user = this.TryToLogin(userModel);
             if (user == null)
                 return false;
@@ -42,10 +50,14 @@ namespace CaWe.Helpers
             userClaims.Add(new Claim(ClaimTypes.Name, user.Email));
             userClaims.Add(new Claim(ClaimTypes.NameIdentifier, user.UserId));
 
+            // Get roles
+            IEnumerable<UserRole> roles = UserRoleManager.Find(r => r.UserId == user.UserId);
+            roles = roles == null ? roles : roles.Where(x => x.UserId == user.UserId).ToList();
+
             // Uncomment this when roles are provided
             userClaims.Add(new Claim(ClaimTypes.Role, "user"));
-            //if (user.Roles != null)
-            //    user.Roles.ForEach(r => userClaims.Add(new Claim(ClaimTypes.Role, r.RoleName)));
+            if (roles != null)
+                roles.ToList().ForEach(r => userClaims.Add(new Claim(ClaimTypes.Role, r.Role.Name)));
 
             ClaimsIdentity userClaimIdentity = new ClaimsIdentity(userClaims, DefaultAuthenticationTypes.ApplicationCookie);
 
@@ -65,13 +77,16 @@ namespace CaWe.Helpers
 
         private User TryToLogin(LoginViewModel model)
         {
+
             // Get all users from DB
-            IEnumerable<User> users = UserManager.GetAll();
+            IEnumerable<User> users = UserManager.Find(u => u.Email == model.Email);
+
             if (users == null || users.Count() == 0)
                 return null;
             
             // Get specific user
             User user = users.FirstOrDefault(x => x.Email == model.Email); 
+            
 
             // If user don't exist return null
             if (user == null)
@@ -79,7 +94,9 @@ namespace CaWe.Helpers
 
             // Verify users password and return user if password matches, otherwise retun null
             if (PasswordHasher.VerifyHashedPassword(user.Pass, model.Password) == PasswordVerificationResult.Success)
+            {
                 return user;
+            }
             else
                 return null;
 

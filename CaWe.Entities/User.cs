@@ -12,7 +12,6 @@ namespace CaWe.Entities
         public string UserId { get; set; }
         public string Email { get; set; }
         public string Pass { get; set; }
+        public List<Role> Roles { get; set; }
     }
-
-   
 }

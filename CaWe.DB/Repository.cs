@@ -18,5 +18,12 @@ namespace CaWe.DB
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
 
+        #region Partials
+
+        public partial class UserDB : BaseDB<User> { }
+        public partial class UserRoleDB : BaseDB<UserRole> { }
+        public partial class RoleDB : BaseDB<Role> { }
+
+        #endregion
     }
 }
