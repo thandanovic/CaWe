@@ -62,14 +62,9 @@ namespace CaWe.Manager
             BaseDB.Update(entity);
         }
 
-        public int Save()
+        public void UpdateRange(IEnumerable<TEntity> entities)
         {
-            return BaseDB.Save();
-        }
-
-        public void Dispose()
-        {
-            BaseDB.Dispose();
+            BaseDB.UpdateRange(entities);
         }
 
         #endregion

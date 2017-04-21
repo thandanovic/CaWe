@@ -33,21 +33,25 @@ namespace CaWe.DB
         public void Add(TEntity entity)
         {
             Repository.Set<TEntity>().Add(entity);
+            Repository.SaveChanges();
         }
 
         public void AddRange(IEnumerable<TEntity> entities)
         {
             Repository.Set<TEntity>().AddRange(entities);
+            Repository.SaveChanges();
         }
 
         public void Remove(TEntity entity)
         {
             Repository.Set<TEntity>().Remove(entity);
+            Repository.SaveChanges();
         }
 
         public void RemoveRange(IEnumerable<TEntity> entities)
         {
             Repository.Set<TEntity>().RemoveRange(entities);
+            Repository.SaveChanges();
         }
 
         public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
@@ -60,20 +64,23 @@ namespace CaWe.DB
             if (entity == null)
                 return;
 
-            TEntity enttity = Repository.Set<TEntity>().Find(entity.GetType().GetProperty("UserId").GetValue(entity));
+            TEntity dbEntity = Repository.Set<TEntity>().Find(entity.GetType().GetProperty("UniquePropFormBaseentity(CONSTANT)").GetValue(entity));
 
-            Repository.Entry(enttity).CurrentValues.SetValues(entity);
+            Repository.Entry(dbEntity).CurrentValues.SetValues(entity);
             Repository.SaveChanges();
         }
 
-        public int Save()
+        public void UpdateRange(IEnumerable<TEntity> entities)
         {
-            return Repository.SaveChanges();
-        }
+            if (entities == null || entities.Count() == 0)
+                return;
 
-        public void Dispose()
-        {
-            Repository.Dispose();
+            for (int i = 0; i < entities.Count(); i++)
+            {
+                TEntity dbEntity = Repository.Set<TEntity>().Find(entities.ElementAt(i).GetType().GetProperty("UniquePropFormBaseentity(CONSTANT)").GetValue(entities.ElementAt(i)));
+                Repository.Entry(dbEntity).CurrentValues.SetValues(entities.ElementAt(i));
+            }
+            Repository.SaveChanges();
         }
 
         #endregion
